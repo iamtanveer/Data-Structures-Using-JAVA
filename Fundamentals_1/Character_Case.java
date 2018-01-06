@@ -15,5 +15,4 @@ public class Character_Case {
 			System.out.println("-1");
 		}
 	}
-
 }
