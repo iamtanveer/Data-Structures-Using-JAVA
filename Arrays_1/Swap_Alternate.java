@@ -2,7 +2,7 @@ package Arrays_1;
 
 import java.util.Scanner;
 
-public class Return_Arr_Sum {
+public class Swap_Alternate {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
@@ -12,17 +12,23 @@ public class Return_Arr_Sum {
 		for(int i=0; i<n; i++){
 			arr[i] = s.nextInt();
 		}
+		swap(arr);
 		
-		System.out.println(sum(arr));
 	}
 	
-	public static int sum(int arr[]){
-		int sum = 0;
-		for(int i=0; i<arr.length; i++){
-			sum += arr[i];
+	
+	public static void swap(int arr[]){
+		for(int i=1; i<arr.length; i+=2){
+			int temp = arr[i-1];
+			arr[i-1] = arr[i];
+			arr[i] = temp;
 		}
-		
-		return sum;
+		print(arr);
 	}
-
+	
+	public static void print(int arr[]){
+		for(int i=0; i<arr.length; i++){
+			System.out.print(arr[i] + " ");
+		}
+	}
 }
