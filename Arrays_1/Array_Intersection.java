@@ -7,7 +7,7 @@ public class Array_Intersection {
 	public static void main(String[] args) {
 		int arr1[] = {2,2,8,5,4,3};
 		int arr2[] = {2,2,4,7};
-		arrIntersection(arr1, arr2);
+		arrIntersection(arr1, arr2); //O(m lg n) + O(n lg n) + O(m+n)
 	}
 	
 	static void arrIntersection(int arr1[], int arr2[]){
