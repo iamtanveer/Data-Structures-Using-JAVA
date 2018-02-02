@@ -10,7 +10,7 @@ public class Trailing_Zeros_In_Factorial {
 		int zeros = 0;
 		
 		for(int i = 5; n/i>=1; i*=5){
-			zeros = n/i;
+			zeros += n/i;
 		}
 		
 //		ALTERNATE WAY is using the FLOOR function
