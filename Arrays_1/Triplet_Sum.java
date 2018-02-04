@@ -15,7 +15,6 @@ public class Triplet_Sum {
 			int st = i+1;
 			int end = input.length - 1;
 			int val = x - input[i];
-//			System.out.println("hey");
 			
 			while(st<end){
 				if(input[st] +input[end] < val){
