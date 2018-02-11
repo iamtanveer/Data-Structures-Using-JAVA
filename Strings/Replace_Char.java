@@ -17,7 +17,7 @@ public class Replace_Char {
 	}
 	
 	public static void main(String[] args) {
-		System.out.print(replaceCharacter("Tanveer", 'e', 'i'));
+		System.out.print(replaceCharacter("String", 'i', 'n'));
 	}
 
 }
