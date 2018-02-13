@@ -19,7 +19,7 @@ public class Reverse_Each_Word_In_String {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(reverseWords("Hi I am coding"));
+		System.out.println(reverseWords("Sherry and Tanveer"));
 	}
 
 }
