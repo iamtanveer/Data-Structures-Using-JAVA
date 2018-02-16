@@ -6,7 +6,7 @@ public class Upper_Case_Conversion {
 
 	public static String upperCase(String input){
 		char c[] = input.toCharArray();
-		for(int i = 0; i <c.length; i++){
+		for(int i = 0; i <c.length - 1; i++){
 			if(c[i] == ' '){
 				if(c[i] == c[i+1]){
 					continue;
