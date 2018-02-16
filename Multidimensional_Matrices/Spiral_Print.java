@@ -10,7 +10,6 @@ public class Spiral_Print {
 		int col = input[0].length;
 		int i, rowStart = 0, colStart = 0;
 		int numberOfElements = row * col, count = 0;
-		System.out.println(row);
 		
 		while(count < numberOfElements){
 			
