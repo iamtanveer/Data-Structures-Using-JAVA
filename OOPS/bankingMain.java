@@ -12,6 +12,8 @@ public class bankingMain {
 		
 		user1.deposit(200);
 		user1.withdraw(29);
+		
+		
 	}
 
 }
