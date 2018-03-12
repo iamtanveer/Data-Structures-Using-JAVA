@@ -4,14 +4,16 @@ public class Reverse_Recursive {
 
 	public static Node<Integer> reverseRecursive(Node<Integer> head){
 		
-		if(head.next == null){
+		if(head==null || head.next == null){
 			return head;
 		}
 		
-		Node<Integer> finalHead = reverseRecursive(head.next);
-		head.next.next = head;
+		Node<Integer> reversedTail = head.next;
+		Node<Integer> smallHead = reverseRecursive(head.next);
+		reversedTail.next = head;
 		head.next = null;
-		return finalHead;
+		
+		return smallHead;
 	}
 	
 	public static void main(String[] args) {
